@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "2. Ismerkedés az informatikusok világával"
 author: Botond János Kovács <botondjanoskovacs@gmail.com>
 ---

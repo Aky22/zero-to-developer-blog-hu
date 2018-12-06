@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "0. Hasznos tanácsok, tippek"
 ---
 

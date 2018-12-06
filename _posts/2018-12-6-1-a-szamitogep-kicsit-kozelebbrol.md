@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "1. A számítógép, kicsit közelebbről"
 author: Botond János Kovács <botondjanoskovacs@gmail.com>
 ---
