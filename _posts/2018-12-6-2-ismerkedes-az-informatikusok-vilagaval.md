@@ -7,7 +7,7 @@ author: Botond János Kovács <botondjanoskovacs@gmail.com>
 # Bevezető
 
 Ebben a modulban az informatikusok világával fogunk ismerkedni: gyakori jelölések,
-egy kis gyakran használt matematika, mértékegységek, ilyesmi. Ezek a dolgok nagyon fontosak
+egy kis gyakran használt matematika, mértékegységek, ilyesmik. Ezek a dolgok nagyon fontosak
 lesznek a későbbi modulokban, ugyanis a programozásban mindenhol előfordulnak, és
 alapvető fontosságú a megértésük, és tudásuk.
 
@@ -60,7 +60,7 @@ amikor kevesebb, mint kétszáz forintom van.
 az autó, és tudom az autószerelő telefonszámát. Ha elindul az autó, vagy nem tudom az autószerelő
 telefonszámát, akkor már `HAMIS`.
 
-Megjegyzés: A logikai feltételek az halmazokhoz nagyon hasonló módon működnek. Gyakorlatilag az
+Megjegyzés: A logikai feltételek a halmazokhoz nagyon hasonló módon működnek. Gyakorlatilag az
 `ÉS` művelet megfeleltethető a metszetképzésnek, a `VAGY` művelet az unióképzésnek, a `NEM` 
 művelet pedig a komplementerképzésnek.
 

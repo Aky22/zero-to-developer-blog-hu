@@ -4,7 +4,7 @@ title: "1. A számítógép, kicsit közelebbről"
 author: Botond János Kovács <botondjanoskovacs@gmail.com>
 ---
 
-# Bevezetés
+# Bevezető
 
 Ebben a modulban kicsit közelebbről ismerkedünk meg a számítógéppel. Megtanulod, hogy nagyvonalakban
 hogyan tárolja a számítógép a fájlokat, mit csinál a processzor, és pontosan mi is történik, amikor
@@ -111,7 +111,7 @@ Néhány példa fájlrendszerekre:
 A számítógép folyamatosan azt csinálja, ami a nevében is benne van: számol. Egészen konkrétan az a 
 komponens, ami ezeket a számításokat végzi az ún. `processzor`. Ez az áramkör képes bekérni a 
 felhasználótól a futtatandó parancsokat, majd szekvenciálisan (szigorúan sorrendben) végrehajtja
-azokat. Ezek a parancsok sokrétűek, akad olyan, ami két számot az össze, mások pedig a monitoron
+azokat. Ezek a parancsok sokrétűek, akad olyan, ami két számot ad össze, mások pedig a monitoron
 egy adott pixelt piros színűre váltanak. 
 
 A mai processzorok ezeknek a parancsoknak a végrehajtását annyira gyorsan csinálják, hogy azt még
@@ -145,7 +145,7 @@ A processzor csak nagyon egyszerű parancsokat tud végrehajtani. A legfontosabb
 következők:
 
 * Regiszter feltöltő parancsok: Ezeknek a parancsoknak a segítségével írhatunk be egy konstans számot,
-vagy olvashatunk be a memóriában, vagy egy másik regiszterből értéket egy adott regiszterbe.
+vagy olvashatunk be a memóriában, vagy egy másik regiszterben tárol értéket egy adott regiszterbe.
 * Aritmetikai parancsok: Ezek a parancsok a regiszterekben, vagy a memóriában tárolt értékek között
 végzendő matematikai műveleteket realizálnak.
 * Memória parancsok: A memória parancsok segítségével írhatunk adatot a memóriába, vagy tölthetünk
