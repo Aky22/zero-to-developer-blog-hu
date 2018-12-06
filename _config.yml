@@ -23,7 +23,7 @@ url: "tutorial.bokov.me" # the base hostname & protocol for your site, e.g. http
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-slate
 plugins:
 
 # Exclude from processing.
