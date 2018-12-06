@@ -18,8 +18,8 @@ email: botondjanoskovacs@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Tananyag azoknak, akik rendelkeznek felhasználói alapismeretekkel, de szeretnének
   többet tudni a számítógépekről, és a programozásról.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "tutorial.bokov.me" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/zero-to-developer-blog-hu" # the subpath of your site, e.g. /blog
+url: "https://bokovhu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
