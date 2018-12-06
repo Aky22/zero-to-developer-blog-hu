@@ -23,7 +23,7 @@ url: "https://bokovhu.github.io" # the base hostname & protocol for your site, e
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-slate
+theme: jekyll-theme-cayman
 plugins:
 
 # Exclude from processing.
