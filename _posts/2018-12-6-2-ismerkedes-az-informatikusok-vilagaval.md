@@ -70,7 +70,7 @@ műveleteket, lévén, hogy az `IGAZ` állapotot realizálhatjuk úgy, hogy `VAN
 a `HAMIS` állapotot pedig úgy, hogy `NINCS FESZÜLTSÉG A VONALON`. A mai informatika, és a ma
 használt összes számítógép (a kvantumszámítógépeket kivéve) ezen az alapon működik.
 
-A logikai `operátorokat` (`ÉS`, `VAGY`, `NEM`, stb.) szokás az operátorhoz tartozó, ún. `igazság táblával` 
+A logikai `operátorokat` (`ÉS`, `VAGY`, `NEM`, stb.) szokás az operátorhoz tartozó, ún. `igazságtáblával` 
 jellemezni. Ez egy olyan táblázat, amiben felsoroljuk az operátor bemeneteit, illetve a kimenetét,
 és minden lehetséges bemenetre megmutatjuk az operátor kimenetét. Alább látható a leggyakrabban használt
 logikai operátorok igazságtáblája.
@@ -212,3 +212,26 @@ Az alábbi felsorolásban láthatjuk a programozásban leggyakrabban használt `
 * Szótár: Nem minden programozási nyelvben létezik. A szótár típusú változók kulcs-érték összerendeléseket tárolnak,
   azaz például egy `Ember` típusú értékeket tároló szótárban a kulcs lehet az ember személyi száma, és személyi
   szám alapján kérdezhetjük ki belőle a hozzá tartozó embert.
+
+# A modul fogalmai
+
+* logikai feltétel
+* logikai műveletek, logikai operátorok
+* ÉS, VAGY, NEM
+* igazságtábla
+* bit, byte
+* bináris számrendszer
+* KB, KiB, MB, MiB, GB, GiB, TB, TiB
+* hexadecimális számrendszer
+* függvény
+* változó
+* típus
+* függvény meghívása
+* függvény visszatérési értéke
+* metódus, procedúra
+* függvény deklarálása
+* függvény implementációja
+* változók deklarálása
+* változók inicializálása
+* egész szám típusok (byte, short, int)
+* karakter, tömb, rekord, struktúra, szótár
