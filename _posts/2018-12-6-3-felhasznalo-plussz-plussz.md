@@ -27,14 +27,14 @@ ezt a szöveges interfészt `parancssornak` nevezzük. A parancssort úgy tudjuk
 megnyomjuk a `WINDOWS + R` gombokat, majd beírjuk a megjelenő ablakba, hogy `cmd.exe`, végül
 entert nyomunk, vagy a futtatás gombra kattintunk.
 
-![A "run" ablak]({{site.url}}/assets/images/module-3/figure-1-run-dialog.png)
+![A "run" ablak]({{site.url}}{{site.baseurl}}/assets/images/module-3/figure-1-run-dialog.png)
 
 A megjelenő, valószínüleg fekete hátterű és fehér betűket tartalmazó ablak maga a parancssor.
 Parancsokat úgy tudunk futtatni, hogy az ablakba begépeljük a futtatandó parancsot, majd
 entert nyomunk. A futtatott parancs írhat különböző üzeneteket ugyanebbe az ablakba, de futtatás
 után ugyanaz a sor jelenik meg, mint amikor elindítottuk az alkalmazást.
 
-![Így néz ki a parancssor]({{site.url}}/assets/images/module-3/figure-2-cmd-window.png)
+![Így néz ki a parancssor]({{site.url}}{{site.baseurl}}/assets/images/module-3/figure-2-cmd-window.png)
 
-![Ez történik, ha futtatunk egy parancsot]({{site.url}}/assets/images/module-3/figure-3-cmd-after-running-a-command.png)
+![Ez történik, ha futtatunk egy parancsot]({{site.url}}{{site.baseurl}}/assets/images/module-3/figure-3-cmd-after-running-a-command.png)
 
