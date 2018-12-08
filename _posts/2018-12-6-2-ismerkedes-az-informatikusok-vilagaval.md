@@ -70,6 +70,33 @@ műveleteket, lévén, hogy az `IGAZ` állapotot realizálhatjuk úgy, hogy `VAN
 a `HAMIS` állapotot pedig úgy, hogy `NINCS FESZÜLTSÉG A VONALON`. A mai informatika, és a ma
 használt összes számítógép (a kvantumszámítógépeket kivéve) ezen az alapon működik.
 
+A logikai `operátorokat` (`ÉS`, `VAGY`, `NEM`, stb.) szokás az operátorhoz tartozó, ún. `igazság táblával` 
+jellemezni. Ez egy olyan táblázat, amiben felsoroljuk az operátor bemeneteit, illetve a kimenetét,
+és minden lehetséges bemenetre megmutatjuk az operátor kimenetét. Alább látható a leggyakrabban használt
+logikai operátorok igazságtáblája.
+
+| `A` | `B` | `A ÉS B` |
+| 0 | 0 | 0 |
+| 0 | 1 | 0 |
+| 1 | 0 | 0 |
+| 1 | 1 | 1 |
+
+| `A` | `B` | `A VAGY B` |
+| 0 | 0 | 0 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 1 |
+
+| `A` | `NEM A` |
+| 0 | 1 |
+| 1 | 0 |
+
+| `A` | `B` | `A KIZÁRÓVAGY B` |
+| 0 | 0 | 0 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 0 |
+
 # A byte és a számrendszerek
 
 Az informatikában van egy rendkívül fontos mértékegység: a `byte`. Egy `byte` pontosan 8
@@ -116,3 +143,72 @@ felfogható, mint a kettő hatványos szorzó. Amit a programozók **igazából*
 vagy nagy `B` szerepel, mert egészen mást jelentenek! Hálózati sávszélesség mérésnél szokásos az egység idő alatt
 áteresztett adat mennyiségét **bitekben** megadni, ahhoz, hogy levetítsük ezt az adatot byte-okra, az adott
 mennyiséget el kell osztani 8-cal!
+
+Egy másik, a programozásban és az informatikusok által nagyon gyakran használt számrendszer a `hexadecimális`.
+A hexadecimális számrendszer 16-os számrendszert jelent, azaz minden helyiértéken a 16<sup>x</sup> 
+valahányszorosa áll. A számjegyek 0-tól 9-ig megegyeznek a 10-es számrendszer számjegyeivel, 10-től 16-ig 
+pedig A, B, C, D, E és F számjegyekkel jelöljük a számokat (A = 10, F = 16). Például a 10-es számrendszerbeli
+255-öt írhatjuk `FF`-nek, mert 255 = 16 * 16<sup>0</sup> + 16 * 16<sup>1</sup>.
+
+# Függvények, változók, típusok
+
+A `függvény`, és a `változó` szó a konvencionális matematikában is használatos. Jelentésük az informatikában
+is hasonló a matematikában használt jelentéshez. A `típus` fogalma viszont általában a matematikai függvények
+és változók környékén nem létezik; a matematikában a függvények értékkészletében és értelmezési tartományában
+az összes elem ugyanolyan típusú: szám. Informatikában viszont egy függvény paraméterei, a függvény vagy 
+változó értéke viszont nem feltétlenül szám, mert lehet szöveg, logikai típus, egész szám, tört szám, és még
+nagyon sok féle adat. Ezek a típusok pedig általában **nem kompatibilisek** egymással, kivéve, ha azt 
+például egy programozási nyelv dokumentációja nem említi explicit módon (például egész és tört számok közötti
+konverzió módja).
+
+A `függvények` informatikában a következő részekből állnak:
+
+* Van egy nevük. Erre a névre hivatkozva lehet a függvényeket `meghívni`.
+* Van egy visszatérési érték típusuk. Ez a típus fogja meghatározni azt, hogy a függvény milyen **típusú** (
+szám, szöveg, stb.) értékeket vehet fel.
+* Vannak paramétereik. Minden paraméternek van
+    * Neve: Ezzel a névvel lehet a függvényen belül hivatkozni a paraméterre
+    * Típusa: A függvénynek ezt az adott paraméterét csak ilyen típusú értékekkel lehet meghatározni
+* És van egy "teste": Ez maga a függvényünk, a függvény testében találhatóak a függvény értékét kiszámolni
+hivatott lépések.
+
+Vannak az informatikában olyan függvények is, amelyeknek nincs `visszatérési értéke` (a függvény adott 
+paraméterezésekor a függvény által felvett érték), csak paraméterei is teste. Ezeket a függvényeket szokás
+`metódusnak`, vagy `procedurának` hívni. Ezek akkor jönnek jól, ha a függvénynek nem kiszámolnia kell egy 
+adott értéket, hanem *csinálnia* kell valamit.
+
+Amikor egy programkódban írunk egy függvényt, azt általában két lépésben tesszük meg (ez két lépés a legtöbb
+nyelvben egy lépésnek néz ki, de akkor is kettő különálló lépésről van szó):
+
+* Először `deklaráljuk` a függvényt: Amikor deklarálunk egy függvényt, akkor megadjuk a nevét, a típusát, illetve
+a paraméterezését. Ekkor még **nem adjuk meg a függvény testét**!
+* Amikor a függvényünket már deklaráltuk, elkészíthetjük a függvény testét, azaz `implementáljuk` az adott függvényt.
+
+Informatikában a `változók` rendkívül hasznos dolgok; segítségükkel jelentősen egyszerűsíthetjük a függvényeinket,
+hiszen a változóinkban lépések között adatot tárolhatunk. A változóknak általában van neve, típusa és értéke.
+Programozáskor meg kell mondanunk a számítógépnek, hogy *milyen* változóink lesznek. Amikor pont ezt csináljuk,
+akkor `változókat deklarálunk`. Amikor megmondjuk a változók deklarálásakor, hogy mi legyen a kezdeti értékük,
+akkor a `változókat inicializáljuk`.
+
+Az alábbi felsorolásban láthatjuk a programozásban leggyakrabban használt `típusokat`:
+
+* Egész szám: Ezek a típusok egész számok tárolására alkalmasak. Több féle méretben elérhetőek a nyelvekben:
+    * `byte`: A `byte` típusú számok 0 és 255 közötti, vagy amennyiben előjelet is tárolnak, -128 és 127 közötti
+    számok tárolására alkalmasak.
+    * `short`: A `short` típus 0 és 65535 közötti *előjel nélküli*, vagy -32768 és 32767 közötti *előjeles* számok 
+    tárolására alkalmas
+    * `int`: Az `int` típus 0 és 2<sup>32</sup> közötti *előjel nélküli*, vagy -2<sup>16</sup> és 2<sup>16</sup> - 1 
+    közötti *előjeles* számok tárolására alkalmas
+* Tört szám: Ezek a típusok ún. *lebegőpontos* aritmetikájú törtszámok tárolására alkalmasak. A lebegőpontos 
+  számábrázolás részleteibe nem megyek bele.
+* Karakter: Egy szövegből pontosan egy darab karakter
+* Tömb: A tömbök segítségével készíthetünk `listákat`, azaz a tömb típusú változóink olyanok, hogy több értéket 
+  tárolnak egymás után
+* Rekord, vagy struktúra (vagy majd később: osztály): Ezek összetett típusok, amikben saját magukban találhatóak
+  más változók. Például ha embereket szeretnénk tárolni, akkor nem veszünk fel 15 különböző tömböt ahhoz, hogy 
+  az emberek 15 attribútumát tároljuk, helyette csinálunk egy `struktúrát`, amiben deklaráljuk az embereknél
+  nyilvántartott 15 különböző attribútumot, és ebből az `Ember` típusból vehetünk fel egy tömböt.
+* Logikai változó: Pontosan két értéket vehet fel: `true`, vagy `false`
+* Szótár: Nem minden programozási nyelvben létezik. A szótár típusú változók kulcs-érték összerendeléseket tárolnak,
+  azaz például egy `Ember` típusú értékeket tároló szótárban a kulcs lehet az ember személyi száma, és személyi
+  szám alapján kérdezhetjük ki belőle a hozzá tartozó embert.
