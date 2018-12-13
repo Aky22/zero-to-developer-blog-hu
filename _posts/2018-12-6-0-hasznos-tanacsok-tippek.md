@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "0. Hasznos tanácsok, tippek"
+author: Botond János Kovács <botondjanoskovacs@gmail.com>
 ---
 
 A tananyag során előfordul majd, hogy bizonyos fejlesztőeszközöket le kell tölteni. Feltételezem,
