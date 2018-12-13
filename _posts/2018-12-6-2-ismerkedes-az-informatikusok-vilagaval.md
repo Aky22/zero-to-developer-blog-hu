@@ -119,7 +119,7 @@ használnak. Ebből kiderül, hogy a legnagyobb szám, amit felírhatunk az az a
 legnagyobb szám, amivel a processzor egy parancsban dolgozni tud. Ez azért meglepő, mert ez egy viszonylag
 véges szám. Ennek a korlátnak a feloldásában majd valamely későbbi leckében foglalkozunk.
 
-A `byte`-ot szoktuk használni az egyes állományaink, illetve bármilyen más adat *méretének* meghatázorására
+A `byte`-ot szoktuk használni az egyes állományaink, illetve bármilyen más adat *méretének* meghatározására
 is. Egy byte-nyi adat meglepően kicsi: általában pontosan 1 darab karakter fér bele. Mivel ennél 
 lényegesen nagyobb fájlok méretét is szeretnénk meghatározni, a `byte`-nál nagyobb mértékegységeket is
 definiálunk:
@@ -156,7 +156,7 @@ A `függvény`, és a `változó` szó a konvencionális matematikában is haszn
 is hasonló a matematikában használt jelentéshez. A `típus` fogalma viszont általában a matematikai függvények
 és változók környékén nem létezik; a matematikában a függvények értékkészletében és értelmezési tartományában
 az összes elem ugyanolyan típusú: szám. Informatikában viszont egy függvény paraméterei, a függvény vagy 
-változó értéke viszont nem feltétlenül szám, mert lehet szöveg, logikai típus, egész szám, tört szám, és még
+változó értéke nem feltétlenül szám, mert lehet szöveg, logikai típus, egész szám, tört szám, és még
 nagyon sok féle adat. Ezek a típusok pedig általában **nem kompatibilisek** egymással, kivéve, ha azt 
 például egy programozási nyelv dokumentációja nem említi explicit módon (például egész és tört számok közötti
 konverzió módja).
@@ -173,16 +173,16 @@ szám, szöveg, stb.) értékeket vehet fel.
 hivatott lépések.
 
 Vannak az informatikában olyan függvények is, amelyeknek nincs `visszatérési értéke` (a függvény adott 
-paraméterezésekor a függvény által felvett érték), csak paraméterei is teste. Ezeket a függvényeket szokás
-`metódusnak`, vagy `procedurának` hívni. Ezek akkor jönnek jól, ha a függvénynek nem kiszámolnia kell egy 
+paraméterezésekor a függvény által felvett érték), csak paraméterei és teste. Ezeket a függvényeket szokás
+`metódusoknak`, vagy `proceduráknak` hívni. Ezek akkor jönnek jól, ha a függvénynek nem kiszámolnia kell egy 
 adott értéket, hanem *csinálnia* kell valamit.
 
-Amikor egy programkódban írunk egy függvényt, azt általában két lépésben tesszük meg (ez két lépés a legtöbb
+Amikor egy programkódban írunk egy függvényt, azt általában két lépésben tesszük meg (ez a két lépés a legtöbb
 nyelvben egy lépésnek néz ki, de akkor is kettő különálló lépésről van szó):
 
 * Először `deklaráljuk` a függvényt: Amikor deklarálunk egy függvényt, akkor megadjuk a nevét, a típusát, illetve
 a paraméterezését. Ekkor még **nem adjuk meg a függvény testét**!
-* Amikor a függvényünket már deklaráltuk, elkészíthetjük a függvény testét, azaz `implementáljuk` az adott függvényt.
+* Amikor a függvényünket már deklaráltuk, elkészíthetjük a függvény testét, azaz `implementálhatjuk` az adott függvényt.
 
 Informatikában a `változók` rendkívül hasznos dolgok; segítségükkel jelentősen egyszerűsíthetjük a függvényeinket,
 hiszen a változóinkban lépések között adatot tárolhatunk. A változóknak általában van neve, típusa és értéke.
@@ -204,14 +204,15 @@ Az alábbi felsorolásban láthatjuk a programozásban leggyakrabban használt `
 * Karakter: Egy szövegből pontosan egy darab karakter
 * Tömb: A tömbök segítségével készíthetünk `listákat`, azaz a tömb típusú változóink olyanok, hogy több értéket 
   tárolnak egymás után
-* Rekord, vagy struktúra (vagy majd később: osztály): Ezek összetett típusok, amikben saját magukban találhatóak
-  más változók. Például ha embereket szeretnénk tárolni, akkor nem veszünk fel 15 különböző tömböt ahhoz, hogy 
+* Rekord, vagy struktúra (vagy majd később: osztály): Ezek összetett típusok, amik saját magukban tárolnak
+  más változókat. Például ha embereket szeretnénk tárolni, akkor nem veszünk fel 15 különböző tömböt ahhoz, hogy 
   az emberek 15 attribútumát tároljuk, helyette csinálunk egy `struktúrát`, amiben deklaráljuk az embereknél
-  nyilvántartott 15 különböző attribútumot, és ebből az `Ember` típusból vehetünk fel egy tömböt.
+  nyilvántartott 15 különböző attribútumot, és ebből az `Ember` típusból vehetünk fel egy tömböt (Ettől a ponttól az 
+  `Ember` is mint típus viselkedik).
 * Logikai változó: Pontosan két értéket vehet fel: `true`, vagy `false`
 * Szótár: Nem minden programozási nyelvben létezik. A szótár típusú változók kulcs-érték összerendeléseket tárolnak,
   azaz például egy `Ember` típusú értékeket tároló szótárban a kulcs lehet az ember személyi száma, és személyi
-  szám alapján kérdezhetjük ki belőle a hozzá tartozó embert.
+  szám alapján kérdezhetjük le belőle a hozzá tartozó embert.
 
 # A modul fogalmai
 

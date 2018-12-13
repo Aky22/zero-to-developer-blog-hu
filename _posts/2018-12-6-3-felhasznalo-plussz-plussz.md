@@ -52,8 +52,8 @@ sorokba
 A Windows-ban használható sok, még a DOS-ból maradt parancs. Ezek közül a leghasznosabbak:
 
 * `cd KÖNYVTÁR`: Másik könyvtárba lehet navigálni ezzel a paranccsal. A `KÖNYVTÁR` helyére 
-  be kell illeszteni a célkönyvtárat.
-* `mkdir KÖNYVTÁR_NEVE`: Új könyvtárat lehet segítségével létrehozni. A `KÖNYVTÁR_NEVE` helyére
+  be kell illeszteni a célkönyvtár elérési útvonalát.
+* `mkdir KÖNYVTÁR_NEVE`: Új könyvtárat lehet a segítségével létrehozni. A `KÖNYVTÁR_NEVE` helyére
   be kell illeszteni az új könyvtár nevét.
 * `echo SZÖVEG`: Kiírja pontosan ugyanazt a szöveget, amit beírtunk a `SZÖVEG` helyére
 * `type FÁJL_NEVE`: Beolvas egy szöveges fájlt (azt, aminek a `FÁJL_NEVE` a neve), és a tartalmát
@@ -103,11 +103,11 @@ parancsot? A következő algoritmus segítségével:
 
 1. Legyen a futtatott parancs neve `X`. A program fájlneve, amit keresünk így `X.exe`, vagy amennyiben
    `X` már eredetileg `.exe`-re végződik, simán `X`. Ezt a fájlnevet tároljuk az `Y` változóban.
-2. Először megnézzük, hogy van-e `Y` nevű fájl a jelenlegi mappában. Ha van, végeztünk, lefuttatjuk.
+2. Először megnézzük, hogy van-e `Y`-ban tárolt érték nevű fájl a jelenlegi mappában. Ha van, végeztünk, lefuttatjuk.
 3. Nézzük a `PATH` elnevezésű környezeti változó értékét. Ennek a környezeti változónak az értéke úgy
    van definiálva, hogy minden egyes elem a könyvtárlistában egy `;` karakterrel van elválasztva. Így
    megyünk végig az összes felsorolt `Z` mappán, a könyvtárlista eredeti sorrendjében.
-4. Megnézzük, hogy létezik-e `Y` nevű futtatható fájl a `Z` mappában. Ha igen, végeztünk, és lefuttatjuk.
+4. Megnézzük, hogy létezik-e `Y`-ban tárolt érték nevű futtatható fájl a `Z` mappában. Ha igen, végeztünk, és lefuttatjuk.
 5. Amennyiben egyik mappában sem találtunk megfelelő fájlt, kiírunk egy hibát a felhasználónak.
 
 A környezeti változók értékét parancssorban könnyen lekérhetjük. Az `echo %VÁLTOZÓ_NEVE%` parancs ki

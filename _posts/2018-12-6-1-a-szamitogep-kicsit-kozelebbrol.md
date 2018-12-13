@@ -144,8 +144,8 @@ minden, a számítógéphez csatlakoztatott komponenshez és perifériákhoz.
 A processzor csak nagyon egyszerű parancsokat tud végrehajtani. A legfontosabb típusú parancsok a 
 következők:
 
-* Regiszter feltöltő parancsok: Ezeknek a parancsoknak a segítségével írhatunk be egy konstans számot,
-vagy olvashatunk be a memóriában, vagy egy másik regiszterben tárol értéket egy adott regiszterbe.
+* Regiszter feltöltő parancsok: Ezeknek a parancsoknak a segítségével írhatunk be egy konstans számot egy regiszterbe,
+  vagy olvashatunk be a memóriából, vagy egy másik regiszterből értéket egy adott regiszterbe.
 * Aritmetikai parancsok: Ezek a parancsok a regiszterekben, vagy a memóriában tárolt értékek között
 végzendő matematikai műveleteket realizálnak.
 * Memória parancsok: A memória parancsok segítségével írhatunk adatot a memóriába, vagy tölthetünk
